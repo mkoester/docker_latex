@@ -1,10 +1,10 @@
-FROM ubuntu:14.04.1
+FROM ubuntu:14.10
 MAINTAINER Mirko Köster <it@mirkokoester.de>
 
-RUN echo "deb http://archive.ubuntu.com/ubuntu trusty multiverse" >> /etc/apt/sources.list
-RUN echo "deb http://archive.ubuntu.com/ubuntu trusty-updates multiverse" >> /etc/apt/sources.list
-RUN echo "deb http://archive.ubuntu.com/ubuntu trusty-security multiverse" >> /etc/apt/sources.list
-RUN echo "deb http://archive.ubuntu.com/ubuntu trusty-backports multiverse" >> /etc/apt/sources.list
+RUN echo "deb http://archive.ubuntu.com/ubuntu utopic multiverse" >> /etc/apt/sources.list
+RUN echo "deb http://archive.ubuntu.com/ubuntu utopic-updates multiverse" >> /etc/apt/sources.list
+RUN echo "deb http://archive.ubuntu.com/ubuntu utopic-security multiverse" >> /etc/apt/sources.list
+RUN echo "deb http://archive.ubuntu.com/ubuntu utopic-backports multiverse" >> /etc/apt/sources.list
 RUN apt-get update
 RUN apt-get upgrade -y
 
